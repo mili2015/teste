@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<p:NFe xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:p="http://www.portalfiscal.inf.br/nfe" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.portalfiscal.inf.br/nfe nfe_v3.10.xsd ">
+  <p:infNFe Id="" versao="">
+    <p:ide>
+      <p:cUF>11</p:cUF>
+      <p:cNF>p:cNF</p:cNF>
+      <p:natOp>p:natOp</p:natOp>
+      <p:indPag>0</p:indPag>
+      <p:mod>55</p:mod>
+      <p:serie>p:serie</p:serie>
+      <p:nNF>p:nNF</p:nNF>
+      <p:dhEmi>p:dhEmi</p:dhEmi>
+      <p:tpNF>0</p:tpNF>
+      <p:idDest>1</p:idDest>
+      <p:cMunFG>p:cMunFG</p:cMunFG>
+      <p:tpImp>0</p:tpImp>
+      <p:tpEmis>1</p:tpEmis>
+      <p:cDV>p:cDV</p:cDV>
+      <p:tpAmb>1</p:tpAmb>
+      <p:finNFe>1</p:finNFe>
+      <p:indFinal>0</p:indFinal>
+      <p:indPres>0</p:indPres>
+      <p:procEmi>0</p:procEmi>
+      <p:verProc>p:verProc</p:verProc>
+    </p:ide>
+    <p:emit>
+      <p:CNPJ>p:CNPJ</p:CNPJ>
+      <p:xNome>p:xNome</p:xNome>
+      <p:enderEmit>
+        <p:xLgr>p:xLgr</p:xLgr>
+        <p:nro>p:nro</p:nro>
+        <p:xBairro>p:xBairro</p:xBairro>
+        <p:cMun>p:cMun</p:cMun>
+        <p:xMun>p:xMun</p:xMun>
+        <p:UF>AC</p:UF>
+        <p:CEP>p:CEP</p:CEP>
+      </p:enderEmit>
+      <p:IE>p:IE</p:IE>
+      <p:CRT>1</p:CRT>
+    </p:emit>
+    <p:avulsa>
+      <p:CNPJ>p:CNPJ</p:CNPJ>
+      <p:xOrgao>p:xOrgao</p:xOrgao>
+      <p:matr>p:matr</p:matr>
+      <p:xAgente>p:xAgente</p:xAgente>
+      <p:UF>AC</p:UF>
+      <p:repEmi>p:repEmi</p:repEmi>
+    </p:avulsa>
+    <p:dest>
+      <p:CNPJ>p:CNPJ</p:CNPJ>
+      <p:indIEDest>1</p:indIEDest>
+    </p:dest>
+    <p:retirada>
+      <p:CNPJ>p:CNPJ</p:CNPJ>
+      <p:xLgr>p:xLgr</p:xLgr>
+      <p:nro>p:nro</p:nro>
+      <p:xBairro>p:xBairro</p:xBairro>
+      <p:cMun>p:cMun</p:cMun>
+      <p:xMun>p:xMun</p:xMun>
+      <p:UF>AC</p:UF>
+    </p:retirada>
+    <p:entrega>
+      <p:CNPJ>p:CNPJ</p:CNPJ>
+      <p:xLgr>p:xLgr</p:xLgr>
+      <p:nro>p:nro</p:nro>
+      <p:xBairro>p:xBairro</p:xBairro>
+      <p:cMun>p:cMun</p:cMun>
+      <p:xMun>p:xMun</p:xMun>
+      <p:UF>AC</p:UF>
+    </p:entrega>
+    <p:autXML>
+      <p:CNPJ>p:CNPJ</p:CNPJ>
+    </p:autXML>
+    <p:det nItem="">
+      <p:prod>
+        <p:cProd>p:cProd</p:cProd>
+        <p:cEAN>p:cEAN</p:cEAN>
+        <p:xProd>p:xProd</p:xProd>
+        <p:NCM>p:NCM</p:NCM>
+        <p:CFOP>1101</p:CFOP>
+        <p:uCom>p:uCom</p:uCom>
+        <p:qCom>p:qCom</p:qCom>
+        <p:vUnCom>p:vUnCom</p:vUnCom>
+        <p:vProd>p:vProd</p:vProd>
+        <p:cEANTrib>p:cEANTrib</p:cEANTrib>
+        <p:uTrib>p:uTrib</p:uTrib>
+        <p:qTrib>p:qTrib</p:qTrib>
+        <p:vUnTrib>p:vUnTrib</p:vUnTrib>
+        <p:indTot>0</p:indTot>
+      </p:prod>
+      <p:imposto/>
+    </p:det>
+    <p:total>
+      <p:ICMSTot>
+        <p:vBC>p:vBC</p:vBC>
+        <p:vICMS>p:vICMS</p:vICMS>
+        <p:vICMSDeson>p:vICMSDeson</p:vICMSDeson>
+        <p:vBCST>p:vBCST</p:vBCST>
+        <p:vST>p:vST</p:vST>
+        <p:vProd>p:vProd</p:vProd>
+        <p:vFrete>p:vFrete</p:vFrete>
+        <p:vSeg>p:vSeg</p:vSeg>
+        <p:vDesc>p:vDesc</p:vDesc>
+        <p:vII>p:vII</p:vII>
+        <p:vIPI>p:vIPI</p:vIPI>
+        <p:vPIS>p:vPIS</p:vPIS>
+        <p:vCOFINS>p:vCOFINS</p:vCOFINS>
+        <p:vOutro>p:vOutro</p:vOutro>
+        <p:vNF>p:vNF</p:vNF>
+      </p:ICMSTot>
+    </p:total>
+    <p:transp>
+      <p:modFrete>0</p:modFrete>
+    </p:transp>
+    <p:cobr/>
+    <p:pag>
+      <p:tPag>01</p:tPag>
+      <p:vPag>p:vPag</p:vPag>
+    </p:pag>
+    <p:infAdic/>
+    <p:exporta>
+      <p:UFSaidaPais>AC</p:UFSaidaPais>
+      <p:xLocExporta>p:xLocExporta</p:xLocExporta>
+    </p:exporta>
+    <p:compra/>
+    <p:cana>
+      <p:safra>p:safra</p:safra>
+      <p:ref>p:ref</p:ref>
+      <p:forDia dia="">
+        <p:qtde>p:qtde</p:qtde>
+      </p:forDia>
+      <p:qTotMes>p:qTotMes</p:qTotMes>
+      <p:qTotAnt>p:qTotAnt</p:qTotAnt>
+      <p:qTotGer>p:qTotGer</p:qTotGer>
+      <p:vFor>p:vFor</p:vFor>
+      <p:vTotDed>p:vTotDed</p:vTotDed>
+      <p:vLiqFor>p:vLiqFor</p:vLiqFor>
+    </p:cana>
+  </p:infNFe>
+  <p:infNFeSupl>
+    <p:qrCode>p:qrCode</p:qrCode>
+  </p:infNFeSupl>
+  <ds:Signature Id="idvalue0">
+    <ds:SignedInfo Id="idvalue1">
+      <ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+      <ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+      <ds:Reference Id="idvalue2" Type="http://tempuri.org" URI="http://tempuri.org">
+        <ds:Transforms>
+          <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+          <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+        </ds:Transforms>
+        <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+        <ds:DigestValue>MA==</ds:DigestValue>
+      </ds:Reference>
+    </ds:SignedInfo>
+    <ds:SignatureValue Id="idvalue3">MA==</ds:SignatureValue>
+    <ds:KeyInfo Id="idvalue4">
+      <ds:X509Data>
+        <ds:X509Certificate>MA==</ds:X509Certificate>
+      </ds:X509Data>
+    </ds:KeyInfo>
+  </ds:Signature>
+</p:NFe>

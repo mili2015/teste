@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<p:retInutNFe versao="token" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:p="http://www.portalfiscal.inf.br/nfe" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.portalfiscal.inf.br/nfe retInutNFe_v3.10.xsd ">
+  <p:infInut>
+    <p:tpAmb>1</p:tpAmb>
+    <p:verAplic>p:verAplic</p:verAplic>
+    <p:cStat>p:cStat</p:cStat>
+    <p:xMotivo>p:xMotivo</p:xMotivo>
+    <p:cUF>11</p:cUF>
+    <p:dhRecbto>p:dhRecbto</p:dhRecbto>
+  </p:infInut>
+</p:retInutNFe>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Pessoa id="1">
+	<data>2009-01-09T10:18:48.016-02:00</data>
+	<idade>22</idade>
+	<nome>Felipe Alves</nome>
+</Pessoa>

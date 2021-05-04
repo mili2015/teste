@@ -1,0 +1,21 @@
+<ObterCustoRota>
+         <!--Optional:-->
+   <auth>
+      <!--Optional:-->
+      <Usuario>tms.mili</Usuario>
+      <!--Optional:-->
+      <Senha>WlxCi3IwO3A=</Senha>
+      <!--Optional:-->
+      <Token i:nil="true"></Token>
+   </auth>
+
+   <!--Optional:-->
+   <custoRotaRequest>
+      <!--Optional:-->
+      <CategoriaVeiculo>11</CategoriaVeiculo>
+      <!--Optional:-->
+      <IdRotaModelo>10181</IdRotaModelo>
+      <!--Optional:-->
+      <ModoPagamentoRota>2</ModoPagamentoRota>
+   </custoRotaRequest>
+</ObterCustoRota>

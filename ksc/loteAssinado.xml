@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EnviarLoteRpsEnvio xmlns="http://isscuritiba.curitiba.pr.gov.br/iss/nfse.xsd" xmlns:ns2="http://www.w3.org/2000/09/xmldsig#"><LoteRps id="2">
+  <NumeroLote>2</NumeroLote>
+  <Cnpj>14387193000190</Cnpj>
+  <InscricaoMunicipal>130506250679</InscricaoMunicipal>
+  <QuantidadeRps>1</QuantidadeRps>
+  <ListaRps>
+    <Rps>
+      <InfRps id="1">
+        <IdentificacaoRps>
+          <Numero>2</Numero>
+          <Serie>1</Serie>
+          <Tipo>1</Tipo>
+        </IdentificacaoRps>
+        <DataEmissao>2012-01-10T15:43:47</DataEmissao>
+        <NaturezaOperacao>1</NaturezaOperacao>
+        <RegimeEspecialTributacao>1</RegimeEspecialTributacao>
+        <OptanteSimplesNacional>1</OptanteSimplesNacional>
+        <IncentivadorCultural>2</IncentivadorCultural>
+        <Status>1</Status>
+        <Servico>
+          <Valores>
+            <ValorServicos>30407.0</ValorServicos>
+            <ValorDeducoes>0.0</ValorDeducoes>
+            <ValorPis>0.0</ValorPis>
+            <ValorCofins>0.0</ValorCofins>
+            <ValorInss>0.0</ValorInss>
+            <ValorIr>0.0</ValorIr>
+            <ValorCsll>0.0</ValorCsll>
+            <IssRetido>2</IssRetido>
+            <ValorIss>0.0</ValorIss>
+            <ValorIssRetido>0.0</ValorIssRetido>
+            <OutrasRetencoes>0.0</OutrasRetencoes>
+            <BaseCalculo>0.0</BaseCalculo>
+            <Aliquota>0.0</Aliquota>
+            <ValorLiquidoNfse>30407.0</ValorLiquidoNfse>
+            <DescontoIncondicionado>0.0</DescontoIncondicionado>
+            <DescontoCondicionado>0.0</DescontoCondicionado>
+          </Valores>
+          <ItemListaServico>2301</ItemListaServico>
+          <CodigoCnae>1813001</CodigoCnae>
+          <Discriminacao>SERVICOS DE IMPRESSAO DIGITAL PARA COMUNICACAO VISUAL\r\nEVENTO VERAO FEST\r\nREF.:SERVICOS DE COMUNICACAO VISUAL EM PAPELAO FBOARD\r\n     PARA O EVENTO VERAO FEST........R$ 30.407,00\r\n\r\n VENCIMENTO DA NOTA FISCAL:A VISTA\r\n</Discriminacao>
+          <CodigoMunicipio>4211900</CodigoMunicipio>
+        </Servico>
+        <Prestador>
+          <Cnpj>14387193000190</Cnpj>
+          <InscricaoMunicipal>130506250679</InscricaoMunicipal>
+        </Prestador>
+        <Tomador>
+          <IdentificacaoTomador>
+            <CpfCnpj>
+              <Cnpj>14233682000197</Cnpj>
+            </CpfCnpj>
+          </IdentificacaoTomador>
+          <RazaoSocial>MDEX LOCACAO DE DIVISORIAS LTDA</RazaoSocial>
+          <Endereco>
+            <Endereco>AVENIDA DAS UNIVERSIDADES</Endereco>
+            <Numero>185</Numero>
+            <Complemento> </Complemento>
+            <Bairro>CID UN. PEDRA BRANCA</Bairro>
+            <CodigoMunicipio>4211900</CodigoMunicipio>
+            <Uf>SC</Uf>
+            <Cep>88137315</Cep>
+          </Endereco>
+        </Tomador>
+      </InfRps>
+    <Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>MhuF/BApttEfs51HHT0LlrqbCBs=</DigestValue></Reference></SignedInfo><SignatureValue>FUt7XTz2GK1ojYoG/h85/fiGD9gkVZGNFCNFIggL1udVMCLtJzVGLQMtBt/a08y2IsU4avS8ZrQq
+BevRMDC9GPecrKxsErAfjA8WbY51Qs/LMSmbwPJzJcHGU1P3RIRW5juWvZbcU1PMhMqXAX7bsqkq
+Fm8d8SQ1ZJjIKevb7u+8X6ZHIZz2iFcAl/gJQZJzVYeKDV6OrmHrs8Xy+WcjoTQrQbWyfP1wgu7o
+H8B7XVMit9gMCWbyR0vfPRsjxxIWhYdN1URoeS6tG3ht7xevC9l7b/I5u9C8UqU/EmwXtFvFTDdi
+tjI5JKaVLF+SH8Qefkngyz8EjGmWi4SvIY+12Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>1.2.840.113549.1.9.1=#16167361756c6f63616d6172676f4066392e636f6d2e6272,CN=WSP IDENTIDADE VISUAL LTDA,OU=ID - 2504054,OU=Assinatura Tipo A1,OU=Autenticado por AR BDI Brasil,O=ICP-Brasil,C=BR</X509SubjectName><X509Certificate>MIIIRzCCBi+gAwIBAgIQJooZCAZdcTqN5ib3ehbMEjANBgkqhkiG9w0BAQsFADB0MQswCQYDVQQG
+EwJCUjETMBEGA1UEChMKSUNQLUJyYXNpbDEtMCsGA1UECxMkQ2VydGlzaWduIENlcnRpZmljYWRv
+cmEgRGlnaXRhbCBTLkEuMSEwHwYDVQQDExhBQyBDZXJ0aXNpZ24gTXVsdGlwbGEgRzUwHhcNMTIw
+MTA5MDAwMDAwWhcNMTMwMTA3MjM1OTU5WjCByjELMAkGA1UEBhMCQlIxEzARBgNVBAoUCklDUC1C
+cmFzaWwxJjAkBgNVBAsUHUF1dGVudGljYWRvIHBvciBBUiBCREkgQnJhc2lsMRswGQYDVQQLFBJB
+c3NpbmF0dXJhIFRpcG8gQTExFTATBgNVBAsUDElEIC0gMjUwNDA1NDEjMCEGA1UEAxMaV1NQIElE
+RU5USURBREUgVklTVUFMIExUREExJTAjBgkqhkiG9w0BCQEWFnNhdWxvY2FtYXJnb0BmOS5jb20u
+YnIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDPoq+vBkWKP1v7VZFaNyAyER3L+tWN
+GdIf6XT1Ueojsb5tRY2b6xCh6mzkDjlgsTvOMTpeUzs43hUe6OPHCKX0hKnrJ5j/4tcays22VGGu
+2PSLmqbxYXMpaNB8MhlMr9xqvjXysWzHprXSD0GOzaE0Xz+ZHQT6OXwkx68LTuE3uyPYnwEIXhYA
+KTZTaGaNQ7doinV5MOUqRgyu1AiTU9P+SawJ2NCGY++H+MO35LUjauOwzvbcWlFBQNe+iH25bE73
+L0d0DyaLKrEn2CleNFi3NFvHd52Re7wDA4Mo6+XiyWsGmKMk55pbBBhyHpdlE5dosm6HOo/8PUGc
+ztb6aHsRAgMBAAGjggN8MIIDeDCBwgYDVR0RBIG6MIG3oD0GBWBMAQMEoDQEMjEwMDkxOTc1MDE2
+NjUyNzU5OTUwMDAwMDAwMDAwMDAwMDAwMDQ5ODU1MzQyNENOSFBSoCoGBWBMAQMCoCEEH0NJTlRJ
+QSBNQVJBIENBTUFSR08gREUgT0xJVkVJUkGgGQYFYEwBAwOgEAQOMTQzODcxOTMwMDAxOTCgFwYF
+YEwBAwegDgQMMDAwMDAwMDAwMDAwgRZzYXVsb2NhbWFyZ29AZjkuY29tLmJyMAkGA1UdEwQCMAAw
+HwYDVR0jBBgwFoAUnVDPvf8kyq+xM+sX4kJ6jmkqjlMwDgYDVR0PAQH/BAQDAgXgMIGJBgNVHSAE
+gYEwfzB9BgZgTAECAQswczBxBggrBgEFBQcCARZlaHR0cDovL2ljcC1icmFzaWwuY2VydGlzaWdu
+LmNvbS5ici9yZXBvc2l0b3Jpby9kcGMvQUNfQ2VydGlzaWduX011bHRpcGxhL0RQQ19BQ19DZXJ0
+aVNpZ25NdWx0aXBsYS5wZGYwggElBgNVHR8EggEcMIIBGDBcoFqgWIZWaHR0cDovL2ljcC1icmFz
+aWwuY2VydGlzaWduLmNvbS5ici9yZXBvc2l0b3Jpby9sY3IvQUNDZXJ0aXNpZ25NdWx0aXBsYUc1
+L0xhdGVzdENSTC5jcmwwW6BZoFeGVWh0dHA6Ly9pY3AtYnJhc2lsLm91dHJhbGNyLmNvbS5ici9y
+ZXBvc2l0b3Jpby9sY3IvQUNDZXJ0aXNpZ25NdWx0aXBsYUc1L0xhdGVzdENSTC5jcmwwW6BZoFeG
+VWh0dHA6Ly9yZXBvc2l0b3Jpby5pY3BicmFzaWwuZ292LmJyL2xjci9DZXJ0aXNpZ24vQUNDZXJ0
+aXNpZ25NdWx0aXBsYUc1L0xhdGVzdENSTC5jcmwwHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUF
+BwMEMIGgBggrBgEFBQcBAQSBkzCBkDBkBggrBgEFBQcwAoZYaHR0cDovL2ljcC1icmFzaWwuY2Vy
+dGlzaWduLmNvbS5ici9yZXBvc2l0b3Jpby9jZXJ0aWZpY2Fkb3MvQUNfQ2VydGlzaWduX011bHRp
+cGxhX0c1LnA3YzAoBggrBgEFBQcwAYYcaHR0cDovL29jc3AuY2VydGlzaWduLmNvbS5icjANBgkq
+hkiG9w0BAQsFAAOCAgEAgKFp3dTSsBqLFFcDgEu0L0LcuqPSyV+yaWnCv2VwwH1yu/BNcH3cVrgZ
+sLjzrrrZeMr6zGpoUZ3kvPRWlH5iq8s0NARHzP0qt/O6aRVPBCE9yRzv/olFyMghCHWVx0f2kS+G
+PJEZ4542xfGSIxebS+OnyJfrpTPbchF0sGrXFz9ZtcMM7D+/tK5vrDZEmfI8tdTK0wMDD5m8jDcO
+vQRexR5Yfj4JjyWPOUKUj7yxR7LV5/obnKTatn7Xmg/O6YGpz9Q78cvbjv88W8VLtp/IohoHB09+
+Ma3MDGyritwGkr+R6uWnJhOK3vc6RJz7seGNwtvNp0PUmtypWCW8atasBqh0upNbEUgEQkmB7W+9
+mD6THRSzXl0ISajbD3TXnL9ET2cP4+pQJ6yYH69QpC1TkDRAataUqWImEJgTSL7VoN0XrIEqFS/q
+Tu/iKzBiyajjfpwrVm3AkINLt0XBDXEtqtShfGcp2sX38nJ7Up2eKWOyFG8RLxVEQJ81DO3VAW0b
+OCMOCWKJJJb4qkuA1FPUSqwFeJC0Nv0O/15SqJOsdSjZKmQoo6KIaJ1Lus1k3t0uaVuOWbZdVSKT
+yo7Q8joVqSTH78XWe4AoVVnwef/Mijdo405uOq807670Id1BlcUQUXUHjrFOAR0Gz0/sC6qpfkb2
+vXQDM29TjY3jT9qJdwo=</X509Certificate></X509Data></KeyInfo></Signature></Rps>
+  </ListaRps>
+</LoteRps><Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI="#2"><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>S9KPT91ym+A479Yo7UVb1eEXLNE=</DigestValue></Reference></SignedInfo><SignatureValue>JG7VLhA2jZjhHiNIqMimPgzOPPb2bq18OSDWIco+gp6qmjS+JikpKTle9E+Rpj1HwFU3/1DLFO7W
+7NSVpK6waLktNJ8NauFOurMRHaEm8pK4S45AqFtFLXUJfa51e76y46SZn8QRofMFEuLYMGaZyOdW
+SSLkUb5H8qIkfsP5uXqP4MWKEJsBmCGDh6axXwyplsmDtEJV0tI9YzzMZDJPfs8R1q8V25FDMb1i
+2v+JEGKjS7/83MHUiTcH+eMLHcwr8eNv/nN7rQ3TU01mwwmpfkgZ1NIn451DLKbkUECQdiHGbeTe
++1M0vg1Wi5kRoY6bcHcMJJxEjyDlmN9vlI1BCw==</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIIRzCCBi+gAwIBAgIQJooZCAZdcTqN5ib3ehbMEjANBgkqhkiG9w0BAQsFADB0MQswCQYDVQQG
+EwJCUjETMBEGA1UEChMKSUNQLUJyYXNpbDEtMCsGA1UECxMkQ2VydGlzaWduIENlcnRpZmljYWRv
+cmEgRGlnaXRhbCBTLkEuMSEwHwYDVQQDExhBQyBDZXJ0aXNpZ24gTXVsdGlwbGEgRzUwHhcNMTIw
+MTA5MDAwMDAwWhcNMTMwMTA3MjM1OTU5WjCByjELMAkGA1UEBhMCQlIxEzARBgNVBAoUCklDUC1C
+cmFzaWwxJjAkBgNVBAsUHUF1dGVudGljYWRvIHBvciBBUiBCREkgQnJhc2lsMRswGQYDVQQLFBJB
+c3NpbmF0dXJhIFRpcG8gQTExFTATBgNVBAsUDElEIC0gMjUwNDA1NDEjMCEGA1UEAxMaV1NQIElE
+RU5USURBREUgVklTVUFMIExUREExJTAjBgkqhkiG9w0BCQEWFnNhdWxvY2FtYXJnb0BmOS5jb20u
+YnIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDPoq+vBkWKP1v7VZFaNyAyER3L+tWN
+GdIf6XT1Ueojsb5tRY2b6xCh6mzkDjlgsTvOMTpeUzs43hUe6OPHCKX0hKnrJ5j/4tcays22VGGu
+2PSLmqbxYXMpaNB8MhlMr9xqvjXysWzHprXSD0GOzaE0Xz+ZHQT6OXwkx68LTuE3uyPYnwEIXhYA
+KTZTaGaNQ7doinV5MOUqRgyu1AiTU9P+SawJ2NCGY++H+MO35LUjauOwzvbcWlFBQNe+iH25bE73
+L0d0DyaLKrEn2CleNFi3NFvHd52Re7wDA4Mo6+XiyWsGmKMk55pbBBhyHpdlE5dosm6HOo/8PUGc
+ztb6aHsRAgMBAAGjggN8MIIDeDCBwgYDVR0RBIG6MIG3oD0GBWBMAQMEoDQEMjEwMDkxOTc1MDE2
+NjUyNzU5OTUwMDAwMDAwMDAwMDAwMDAwMDQ5ODU1MzQyNENOSFBSoCoGBWBMAQMCoCEEH0NJTlRJ
+QSBNQVJBIENBTUFSR08gREUgT0xJVkVJUkGgGQYFYEwBAwOgEAQOMTQzODcxOTMwMDAxOTCgFwYF
+YEwBAwegDgQMMDAwMDAwMDAwMDAwgRZzYXVsb2NhbWFyZ29AZjkuY29tLmJyMAkGA1UdEwQCMAAw
+HwYDVR0jBBgwFoAUnVDPvf8kyq+xM+sX4kJ6jmkqjlMwDgYDVR0PAQH/BAQDAgXgMIGJBgNVHSAE
+gYEwfzB9BgZgTAECAQswczBxBggrBgEFBQcCARZlaHR0cDovL2ljcC1icmFzaWwuY2VydGlzaWdu
+LmNvbS5ici9yZXBvc2l0b3Jpby9kcGMvQUNfQ2VydGlzaWduX011bHRpcGxhL0RQQ19BQ19DZXJ0
+aVNpZ25NdWx0aXBsYS5wZGYwggElBgNVHR8EggEcMIIBGDBcoFqgWIZWaHR0cDovL2ljcC1icmFz
+aWwuY2VydGlzaWduLmNvbS5ici9yZXBvc2l0b3Jpby9sY3IvQUNDZXJ0aXNpZ25NdWx0aXBsYUc1
+L0xhdGVzdENSTC5jcmwwW6BZoFeGVWh0dHA6Ly9pY3AtYnJhc2lsLm91dHJhbGNyLmNvbS5ici9y
+ZXBvc2l0b3Jpby9sY3IvQUNDZXJ0aXNpZ25NdWx0aXBsYUc1L0xhdGVzdENSTC5jcmwwW6BZoFeG
+VWh0dHA6Ly9yZXBvc2l0b3Jpby5pY3BicmFzaWwuZ292LmJyL2xjci9DZXJ0aXNpZ24vQUNDZXJ0
+aXNpZ25NdWx0aXBsYUc1L0xhdGVzdENSTC5jcmwwHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUF
+BwMEMIGgBggrBgEFBQcBAQSBkzCBkDBkBggrBgEFBQcwAoZYaHR0cDovL2ljcC1icmFzaWwuY2Vy
+dGlzaWduLmNvbS5ici9yZXBvc2l0b3Jpby9jZXJ0aWZpY2Fkb3MvQUNfQ2VydGlzaWduX011bHRp
+cGxhX0c1LnA3YzAoBggrBgEFBQcwAYYcaHR0cDovL29jc3AuY2VydGlzaWduLmNvbS5icjANBgkq
+hkiG9w0BAQsFAAOCAgEAgKFp3dTSsBqLFFcDgEu0L0LcuqPSyV+yaWnCv2VwwH1yu/BNcH3cVrgZ
+sLjzrrrZeMr6zGpoUZ3kvPRWlH5iq8s0NARHzP0qt/O6aRVPBCE9yRzv/olFyMghCHWVx0f2kS+G
+PJEZ4542xfGSIxebS+OnyJfrpTPbchF0sGrXFz9ZtcMM7D+/tK5vrDZEmfI8tdTK0wMDD5m8jDcO
+vQRexR5Yfj4JjyWPOUKUj7yxR7LV5/obnKTatn7Xmg/O6YGpz9Q78cvbjv88W8VLtp/IohoHB09+
+Ma3MDGyritwGkr+R6uWnJhOK3vc6RJz7seGNwtvNp0PUmtypWCW8atasBqh0upNbEUgEQkmB7W+9
+mD6THRSzXl0ISajbD3TXnL9ET2cP4+pQJ6yYH69QpC1TkDRAataUqWImEJgTSL7VoN0XrIEqFS/q
+Tu/iKzBiyajjfpwrVm3AkINLt0XBDXEtqtShfGcp2sX38nJ7Up2eKWOyFG8RLxVEQJ81DO3VAW0b
+OCMOCWKJJJb4qkuA1FPUSqwFeJC0Nv0O/15SqJOsdSjZKmQoo6KIaJ1Lus1k3t0uaVuOWbZdVSKT
+yo7Q8joVqSTH78XWe4AoVVnwef/Mijdo405uOq807670Id1BlcUQUXUHjrFOAR0Gz0/sC6qpfkb2
+vXQDM29TjY3jT9qJdwo=</X509Certificate></X509Data></KeyInfo></Signature></EnviarLoteRpsEnvio>

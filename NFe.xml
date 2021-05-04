@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nfeProc versao="1.10" xmlns="http://www.portalfiscal.inf.br/nfe"
+	xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.portalfiscal.inf.br/nfe procNFe_v1.10.xsd">
+	<NFe xmlns="http://www.portalfiscal.inf.br/nfe">
+		<infNFe versao="1.10"
+			Id="NFe41101192664028002438550010001006186989125315">
+			<ide>
+				<cUF>41</cUF>
+				<cNF>698912531</cNF>
+				<natOp>VENDA MERC. ADQ.\REC. TERC.</natOp>
+				<indPag>1</indPag>
+				<mod>55</mod>
+				<serie>1</serie>
+				<nNF>100618</nNF>
+				<dEmi>2010-11-18</dEmi>
+				<tpNF>1</tpNF>
+				<cMunFG>4106902</cMunFG>
+				<tpImp>1</tpImp>
+				<tpEmis>1</tpEmis>
+				<cDV>5</cDV>
+				<tpAmb>1</tpAmb>
+				<finNFe>1</finNFe>
+				<procEmi>0</procEmi>
+				<verProc>1.0</verProc>
+			</ide>
+			<emit>
+				<CNPJ>92664028002438</CNPJ>
+				<xNome>FERRAMENTAS GERAIS COM. IMP. S.A.</xNome>
+				<xFant>FERRAMENTAS GERAIS COM. IMP. S.A.</xFant>
+				<enderEmit>
+					<xLgr>R JOAO BETTEGA</xLgr>
+					<nro>4280</nro>
+					<xBairro>SEM BAIRRO</xBairro>
+					<cMun>4106902</cMun>
+					<xMun>CURITIBA</xMun>
+					<UF>PR</UF>
+					<CEP>81350900</CEP>
+					<cPais>1058</cPais>
+					<xPais>BRASIL</xPais>
+				</enderEmit>
+				<IE>9018559606</IE>
+			</emit>
+			<dest>
+				<CNPJ>78908266000205</CNPJ>
+				<xNome>MILI SA</xNome>
+				<enderDest>
+					<xLgr>ROD SC 303 KM 5,5</xLgr>
+					<nro>5500</nro>
+					<xCpl>KM 55</xCpl>
+					<xBairro>CRISTOVAO</xBairro>
+					<cMun>4218301</cMun>
+					<xMun>TRES BARRAS</xMun>
+					<UF>SC</UF>
+					<CEP>89490000</CEP>
+					<cPais>1058</cPais>
+					<xPais>BRASIL</xPais>
+					<fone>476234114</fone>
+				</enderDest>
+				<IE>251416402</IE>
+			</dest>
+			<entrega>
+				<CNPJ>78908266000205</CNPJ>
+				<xLgr>ROD SC 303 KM 5,5</xLgr>
+				<nro>5500</nro>
+				<xCpl>KM 55</xCpl>
+				<xBairro>CRISTOVAO</xBairro>
+				<cMun>4218301</cMun>
+				<xMun>TRES BARRAS</xMun>
+				<UF>SC</UF>
+			</entrega>
+			<det nItem="1">
+				<prod>
+					<cProd>7182341</cProd>
+					<cEAN></cEAN>
+					<xProd>SOLDA VARETA P\TIG INOX 316L 2,4 316L WELD</xProd>
+					<NCM>72222000</NCM>
+					<genero>72</genero>
+					<CFOP>6102</CFOP>
+					<uCom>KG</uCom>
+					<qCom>46.3000</qCom>
+					<vUnCom>41.4000</vUnCom>
+					<vProd>1916.82</vProd>
+					<cEANTrib></cEANTrib>
+					<uTrib>KG</uTrib>
+					<qTrib>46.3000</qTrib>
+					<vUnTrib>41.4000</vUnTrib>
+				</prod>
+				<imposto>
+					<ICMS>
+						<ICMS00>
+							<orig>0</orig>
+							<CST>00</CST>
+							<modBC>3</modBC>
+							<vBC>2012.66</vBC>
+							<pICMS>12.00</pICMS>
+							<vICMS>241.52</vICMS>
+						</ICMS00>
+					</ICMS>
+					<IPI>
+						<cEnq>999</cEnq>
+						<IPITrib>
+							<CST>50</CST>
+							<vBC>1916.82</vBC>
+							<pIPI>5.00</pIPI>
+							<vIPI>95.84</vIPI>
+						</IPITrib>
+					</IPI>
+					<PIS>
+						<PISAliq>
+							<CST>01</CST>
+							<vBC>1916.82</vBC>
+							<pPIS>1.65</pPIS>
+							<vPIS>31.63</vPIS>
+						</PISAliq>
+					</PIS>
+					<COFINS>
+						<COFINSAliq>
+							<CST>01</CST>
+							<vBC>1916.82</vBC>
+							<pCOFINS>7.60</pCOFINS>
+							<vCOFINS>145.68</vCOFINS>
+						</COFINSAliq>
+					</COFINS>
+				</imposto>
+			</det>
+			<det nItem="2">
+				<prod>
+					<cProd>6474241</cProd>
+					<cEAN></cEAN>
+					<xProd>ELETRODO TUNGST.C\TORIO 3,20MM PONTA VERMEL.INOX 012015512
+						CARBOGRAF.</xProd>
+					<NCM>81019600</NCM>
+					<genero>81</genero>
+					<CFOP>6102</CFOP>
+					<uCom>PC</uCom>
+					<qCom>50.0000</qCom>
+					<vUnCom>8.1200</vUnCom>
+					<vProd>406.00</vProd>
+					<cEANTrib></cEANTrib>
+					<uTrib>PC</uTrib>
+					<qTrib>50.0000</qTrib>
+					<vUnTrib>8.1200</vUnTrib>
+				</prod>
+				<imposto>
+					<ICMS>
+						<ICMS00>
+							<orig>0</orig>
+							<CST>00</CST>
+							<modBC>3</modBC>
+							<vBC>406.00</vBC>
+							<pICMS>12.00</pICMS>
+							<vICMS>48.72</vICMS>
+						</ICMS00>
+					</ICMS>
+					<IPI>
+						<cEnq>999</cEnq>
+						<IPINT>
+							<CST>51</CST>
+						</IPINT>
+					</IPI>
+					<PIS>
+						<PISAliq>
+							<CST>01</CST>
+							<vBC>406.00</vBC>
+							<pPIS>1.65</pPIS>
+							<vPIS>6.70</vPIS>
+						</PISAliq>
+					</PIS>
+					<COFINS>
+						<COFINSAliq>
+							<CST>01</CST>
+							<vBC>406.00</vBC>
+							<pCOFINS>7.60</pCOFINS>
+							<vCOFINS>30.86</vCOFINS>
+						</COFINSAliq>
+					</COFINS>
+				</imposto>
+			</det>
+			<total>
+				<ICMSTot>
+					<vBC>2418.66</vBC>
+					<vICMS>290.24</vICMS>
+					<vBCST>0.00</vBCST>
+					<vST>0.00</vST>
+					<vProd>2322.82</vProd>
+					<vFrete>0.00</vFrete>
+					<vSeg>0.00</vSeg>
+					<vDesc>0.00</vDesc>
+					<vII>0.00</vII>
+					<vIPI>95.84</vIPI>
+					<vPIS>38.33</vPIS>
+					<vCOFINS>176.54</vCOFINS>
+					<vOutro>0.00</vOutro>
+					<vNF>2418.66</vNF>
+				</ICMSTot>
+			</total>
+			<transp>
+				<modFrete>0</modFrete>
+				<transporta>
+					<CNPJ>05911234000104</CNPJ>
+					<xNome>INTRACARGO TRANSPORTES LTDA</xNome>
+					<IE>412\0510362-0</IE>
+					<xEnder>RUA PROCOPIO DE LIMA, 423</xEnder>
+					<xMun>PATO BRANCO</xMun>
+					<UF>PR</UF>
+				</transporta>
+				<vol>
+					<qVol>11</qVol>
+					<esp>VOLUMES</esp>
+					<pesoL>47.300</pesoL>
+					<pesoB>47.300</pesoB>
+				</vol>
+			</transp>
+			<cobr>
+				<dup>
+					<nDup>1</nDup>
+					<dVenc>2010-12-30</dVenc>
+					<vDup>2418.66</vDup>
+				</dup>
+			</cobr>
+		</infNFe>
+		<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+			<SignedInfo>
+				<CanonicalizationMethod
+					Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+				<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+				<Reference URI="#NFe41101192664028002438550010001006186989125315">
+					<Transforms>
+						<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+						<Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+					</Transforms>
+					<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+					<DigestValue>25m9g94nXbZE025V+Q1RlZG+h+E=</DigestValue>
+				</Reference>
+			</SignedInfo>
+			<SignatureValue>J5KLPtSjHSxv1aLhJgVeggHcuA4LeitxRIWTAFqffqLWvGc9SyaUDe/bjrNmRZPYZ9ffnVHFc7V6/isjKlldZlFuhYVTiOa2F/bhIRlhg6FSyU8HN3q0D/vwc1LKYKjc7wt4F7NDjOdK4UT5dQWZQQyoJiLHw065tYjWBEX8OW4=
+			</SignatureValue>
+			<KeyInfo>
+				<X509Data>
+					<X509Certificate>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
+					</X509Certificate>
+				</X509Data>
+			</KeyInfo>
+		</Signature>
+	</NFe>
+	<protNFe versao="1.10">
+		<infProt>
+			<tpAmb>1</tpAmb>
+			<verAplic>v3708</verAplic>
+			<chNFe>41101192664028002438550010001006186989125315</chNFe>
+			<dhRecbto>2010-11-18T12:29:22</dhRecbto>
+			<nProt>141100097082994</nProt>
+			<digVal>25m9g94nXbZE025V+Q1RlZG+h+E=</digVal>
+			<cStat>100</cStat>
+			<xMotivo>Autorizado o uso de NF-e</xMotivo>
+		</infProt>
+	</protNFe>
+</nfeProc>

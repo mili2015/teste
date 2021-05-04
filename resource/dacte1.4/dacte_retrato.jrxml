@@ -1,0 +1,3305 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+<!-- Created with iReport - A designer for JasperReports -->
+<!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+<jasperReport
+		 name="dacte_retrato"
+		 columnCount="3"
+		 printOrder="Vertical"
+		 orientation="Portrait"
+		 pageWidth="595"
+		 pageHeight="842"
+		 columnWidth="177"
+		 columnSpacing="0"
+		 leftMargin="28"
+		 rightMargin="36"
+		 topMargin="28"
+		 bottomMargin="28"
+		 whenNoDataType="NoPages"
+		 isTitleNewPage="false"
+		 isSummaryNewPage="false">
+	<property name="ireport.zoom" value="3.0" />
+	<property name="ireport.x" value="0" />
+	<property name="ireport.y" value="1364" />
+	<property name="ireport.scriptlethandling" value="0" />
+	<property name="ireport.encoding" value="UTF-8" />
+	<import value="java.util.*" />
+	<import value="net.sf.jasperreports.engine.*" />
+	<import value="net.sf.jasperreports.engine.data.*" />
+
+	<parameter name="SUBREPORT_DIR" isForPrompting="false" class="java.lang.Object">
+		<defaultValueExpression ><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<queryString language="xPath"><![CDATA[/cteProc/CTe/infCte/ide]]></queryString>
+
+	<field name="tpEmis" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/ide/tpEmis]]></fieldDescription>
+	</field>
+	<field name="natOp" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/ide/natOp]]></fieldDescription>
+	</field>
+	<field name="cfop" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/ide/CFOP]]></fieldDescription>
+	</field>
+	<field name="mod" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/ide/mod]]></fieldDescription>
+	</field>
+	<field name="serie" class="java.lang.String">
+		<fieldDescription><![CDATA[serie]]></fieldDescription>
+	</field>
+	<field name="nCT" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/ide/nCT]]></fieldDescription>
+	</field>
+	<field name="NomeEmitente" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/emit/xNome]]></fieldDescription>
+	</field>
+	<field name="logradouroEmitente" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/emit/enderEmit/xLgr]]></fieldDescription>
+	</field>
+	<field name="numeroEmitente" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/emit/enderEmit/nro]]></fieldDescription>
+	</field>
+	<field name="complementoEmitente" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/emit/enderEmit/xCpl]]></fieldDescription>
+	</field>
+	<field name="bairroEmitente" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/emit/enderEmit/xBairro]]></fieldDescription>
+	</field>
+	<field name="municipioEmitente" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/emit/enderEmit/xMun]]></fieldDescription>
+	</field>
+	<field name="ufEmitente" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/emit/enderEmit/UF]]></fieldDescription>
+	</field>
+	<field name="cepEmitente" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/emit/enderEmit/CEP]]></fieldDescription>
+	</field>
+	<field name="cnpjEmitente" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/emit/CNPJ]]></fieldDescription>
+	</field>
+	<field name="inscricaoEstadualEmitente" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/emit/IE]]></fieldDescription>
+	</field>
+	<field name="telefoneEmitente" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/emit/enderEmit/fone]]></fieldDescription>
+	</field>
+	<field name="dhEmi" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/ide/dhEmi]]></fieldDescription>
+	</field>
+	<field name="chCTe" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/protCTe/infProt/chCTe]]></fieldDescription>
+	</field>
+	<field name="tpCTe" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/ide/tpCTe]]></fieldDescription>
+	</field>
+	<field name="toma3" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/ide/toma03/toma]]></fieldDescription>
+	</field>
+	<field name="toma4" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/ide/toma04/toma]]></fieldDescription>
+	</field>
+	<field name="forPag" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/ide/forPag]]></fieldDescription>
+	</field>
+	<field name="nProt" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/protCTe/infProt/nProt]]></fieldDescription>
+	</field>
+	<field name="dhRecbto" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/protCTe/infProt/dhRecbto]]></fieldDescription>
+	</field>
+	<field name="UFFim" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/ide/UFFim]]></fieldDescription>
+	</field>
+	<field name="xMunFim" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/ide/xMunFim]]></fieldDescription>
+	</field>
+	<field name="UFIni" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/ide/UFIni]]></fieldDescription>
+	</field>
+	<field name="xMunIni" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/ide/xMunIni]]></fieldDescription>
+	</field>
+	<field name="RemCNPJ" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/rem/CNPJ]]></fieldDescription>
+	</field>
+	<field name="RemIE" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/rem/IE]]></fieldDescription>
+	</field>
+	<field name="RemxNome" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/rem/xNome]]></fieldDescription>
+	</field>
+	<field name="RemxLgr" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/rem/enderReme/xLgr]]></fieldDescription>
+	</field>
+	<field name="Remnro" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/rem/enderReme/nro]]></fieldDescription>
+	</field>
+	<field name="RemxBairro" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/rem/enderReme/xBairro]]></fieldDescription>
+	</field>
+	<field name="RemxMun" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/rem/enderReme/xMun]]></fieldDescription>
+	</field>
+	<field name="RemCEP" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/rem/enderReme/CEP]]></fieldDescription>
+	</field>
+	<field name="RemUF" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/rem/enderReme/UF]]></fieldDescription>
+	</field>
+	<field name="expedCNPJ" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/exped/CNPJ]]></fieldDescription>
+	</field>
+	<field name="expedIE" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/exped/IE]]></fieldDescription>
+	</field>
+	<field name="expedxNome" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/exped/xNome]]></fieldDescription>
+	</field>
+	<field name="expedxLgr" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/exped/enderExped/xLgr]]></fieldDescription>
+	</field>
+	<field name="expednro" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/exped/enderExped/nro]]></fieldDescription>
+	</field>
+	<field name="expedxBairro" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/exped/enderExped/xBairro]]></fieldDescription>
+	</field>
+	<field name="expedxMun" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/exped/enderExped/xMun]]></fieldDescription>
+	</field>
+	<field name="expedCEP" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/exped/enderExped/CEP]]></fieldDescription>
+	</field>
+	<field name="expedUF" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/exped/enderExped/UF]]></fieldDescription>
+	</field>
+	<field name="recebCNPJ" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/receb/CNPJ]]></fieldDescription>
+	</field>
+	<field name="recebIE" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/receb/IE]]></fieldDescription>
+	</field>
+	<field name="recebxNome" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/receb/xNome]]></fieldDescription>
+	</field>
+	<field name="recebxLgr" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/receb/enderReceb/xLgr]]></fieldDescription>
+	</field>
+	<field name="recebnro" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/receb/enderReceb/nro]]></fieldDescription>
+	</field>
+	<field name="recebxBairro" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/receb/enderReceb/xBairro]]></fieldDescription>
+	</field>
+	<field name="recebxMun" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/receb/enderReceb/xMun]]></fieldDescription>
+	</field>
+	<field name="recebCEP" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/receb/enderReceb/CEP]]></fieldDescription>
+	</field>
+	<field name="recebUF" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/receb/enderReceb/UF]]></fieldDescription>
+	</field>
+	<field name="destCNPJ" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/dest/CNPJ]]></fieldDescription>
+	</field>
+	<field name="destIE" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/dest/IE]]></fieldDescription>
+	</field>
+	<field name="destxNome" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/dest/xNome]]></fieldDescription>
+	</field>
+	<field name="destxLgr" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/dest/enderDest/xLgr]]></fieldDescription>
+	</field>
+	<field name="destnro" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/dest/enderDest/nro]]></fieldDescription>
+	</field>
+	<field name="destxBairro" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/dest/enderDest/xBairro]]></fieldDescription>
+	</field>
+	<field name="destxMun" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/dest/enderDest/xMun]]></fieldDescription>
+	</field>
+	<field name="destCEP" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/dest/enderDest/CEP]]></fieldDescription>
+	</field>
+	<field name="destUF" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/dest/enderDest/UF]]></fieldDescription>
+	</field>
+	<field name="TomadorServico3" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/ide/toma03/toma]]></fieldDescription>
+	</field>
+	<field name="CstIcms" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/imp/ICMS/descendant::CST]]></fieldDescription>
+	</field>
+	<field name="vBC" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/imp/ICMS/descendant::vBC]]></fieldDescription>
+	</field>
+	<field name="pICMS" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/imp/ICMS/descendant::pICMS]]></fieldDescription>
+	</field>
+	<field name="vICMS" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/imp/ICMS/descendant::vICMS]]></fieldDescription>
+	</field>
+	<field name="vTPrest" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/vPrest/vTPrest]]></fieldDescription>
+	</field>
+	<field name="vRec" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/vPrest/vRec]]></fieldDescription>
+	</field>
+	<field name="vICMSSTRet" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/imp/ICMS/descendant::vICMSSTRet]]></fieldDescription>
+	</field>
+	<field name="vCarga" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/infCTeNorm/infCarga/vCarga]]></fieldDescription>
+	</field>
+	<field name="proPred" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/infCTeNorm/infCarga/proPred]]></fieldDescription>
+	</field>
+	<field name="respSeg" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/infCTeNorm/seg/respSeg]]></fieldDescription>
+	</field>
+	<field name="xSeg" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/infCTeNorm/seg/xSeg]]></fieldDescription>
+	</field>
+	<field name="nApol" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/infCTeNorm/seg/nApol]]></fieldDescription>
+	</field>
+	<field name="xObs" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/compl/xObs]]></fieldDescription>
+	</field>
+	<field name="RNTRC" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/infCTeNorm/infModal/rodo/RNTRC]]></fieldDescription>
+	</field>
+	<field name="dPrev" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/infCTeNorm/infModal/rodo/dPrev]]></fieldDescription>
+	</field>
+	<field name="lota" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/infCTeNorm/infModal/rodo/lota]]></fieldDescription>
+	</field>
+	<field name="CIOT" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/infCTeNorm/infModal/rodo/CIOT]]></fieldDescription>
+	</field>
+	<field name="chave" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/infCTeNorm/infDoc/infNFe/chave]]></fieldDescription>
+	</field>
+	<field name="xOutCat" class="java.lang.String">
+		<fieldDescription><![CDATA[/cteProc/CTe/infCte/infCTeNorm/infCarga/xOutCat]]></fieldDescription>
+	</field>
+
+		<background>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</background>
+		<title>
+			<band height="507"  isSplitAllowed="true" >
+				<rectangle radius="3" >
+					<reportElement
+						x="426"
+						y="0"
+						width="105"
+						height="29"
+						key="rectangle-120"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</rectangle>
+				<rectangle radius="3" >
+					<reportElement
+						x="292"
+						y="0"
+						width="134"
+						height="29"
+						key="rectangle-120"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</rectangle>
+				<rectangle radius="3" >
+					<reportElement
+						x="0"
+						y="0"
+						width="292"
+						height="100"
+						key="rectangle-119"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</rectangle>
+				<rectangle radius="3" >
+					<reportElement
+						x="292"
+						y="49"
+						width="239"
+						height="31"
+						key="rectangle-71"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</rectangle>
+				<rectangle radius="3" >
+					<reportElement
+						x="0"
+						y="120"
+						width="531"
+						height="20"
+						key="rectangle-72"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</rectangle>
+				<rectangle radius="3" >
+					<reportElement
+						x="0"
+						y="140"
+						width="265"
+						height="20"
+						key="rectangle-73"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</rectangle>
+				<rectangle radius="3" >
+					<reportElement
+						x="265"
+						y="140"
+						width="266"
+						height="20"
+						key="rectangle-74"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</rectangle>
+				<rectangle radius="3" >
+					<reportElement
+						x="292"
+						y="80"
+						width="239"
+						height="20"
+						key="rectangle-76"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</rectangle>
+				<staticText>
+					<reportElement
+						x="294"
+						y="80"
+						width="234"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[Chave de acesso para consulta de autenticidade no site www.cte.fazenda.gov.br]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="320"
+						y="120"
+						width="9"
+						height="0"
+						key="staticText-149"/>
+					<box></box>
+					<textElement>
+						<font/>
+					</textElement>
+				<text><![CDATA[Texto Estático]]></text>
+				</staticText>
+				<elementGroup><!--  Start: 1 !-->
+				<staticText>
+					<reportElement
+						x="292"
+						y="14"
+						width="134"
+						height="15"
+						key="staticText-84"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font fontName="Arial" size="6" isStrikeThrough="false" />
+					</textElement>
+				<text><![CDATA[Documento Auxiliar do Conhecimento de Transporte Eletrônico (CT-e)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="292"
+						y="2"
+						width="134"
+						height="13"
+						key="staticText-83"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font fontName="Arial" size="10" isBold="true"/>
+					</textElement>
+				<text><![CDATA[DACTE]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="426"
+						y="2"
+						width="105"
+						height="13"
+						key="staticText-83"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font fontName="Arial" size="10" isBold="false"/>
+					</textElement>
+				<text><![CDATA[Modal]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="426"
+						y="14"
+						width="105"
+						height="13"
+						key="staticText-83"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font fontName="Arial" size="10" isBold="false"/>
+					</textElement>
+				<text><![CDATA[Rodoviário]]></text>
+				</staticText>
+				</elementGroup><!-- End 1 !-->
+				<rectangle radius="3" >
+					<reportElement
+						x="292"
+						y="29"
+						width="239"
+						height="20"
+						key="rectangle-121"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</rectangle>
+				<line direction="TopDown">
+					<reportElement
+						x="321"
+						y="29"
+						width="1"
+						height="20"
+						key="line-3"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</line>
+				<staticText>
+					<reportElement
+						x="295"
+						y="29"
+						width="26"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[MODELO]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="324"
+						y="29"
+						width="19"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[SÉRIE]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="347"
+						y="29"
+						width="51"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[NÚMERO (CT-E)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="401"
+						y="29"
+						width="20"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[FOLHA]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="429"
+						y="29"
+						width="102"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[DATA E HORA DE EMISSÃO]]></text>
+				</staticText>
+				<line direction="TopDown">
+					<reportElement
+						x="344"
+						y="29"
+						width="1"
+						height="20"
+						key="line-3"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="398"
+						y="29"
+						width="1"
+						height="20"
+						key="line-3"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="426"
+						y="29"
+						width="1"
+						height="20"
+						key="line-3"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</line>
+				<rectangle radius="3" >
+					<reportElement
+						x="292"
+						y="99"
+						width="239"
+						height="20"
+						key="rectangle-121"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</rectangle>
+				<line direction="TopDown">
+					<reportElement
+						x="425"
+						y="100"
+						width="1"
+						height="20"
+						key="line-3"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</line>
+				<staticText>
+					<reportElement
+						x="295"
+						y="100"
+						width="77"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[PROTOCOLO]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="428"
+						y="100"
+						width="103"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[INSC. SULFRAMA DO DESTINATÁRIO]]></text>
+				</staticText>
+				<rectangle radius="3" >
+					<reportElement
+						x="0"
+						y="100"
+						width="292"
+						height="20"
+						key="rectangle-121"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</rectangle>
+				<line direction="TopDown">
+					<reportElement
+						x="73"
+						y="100"
+						width="1"
+						height="20"
+						key="line-3"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="146"
+						y="100"
+						width="1"
+						height="20"
+						key="line-3"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="219"
+						y="100"
+						width="1"
+						height="20"
+						key="line-3"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</line>
+				<staticText>
+					<reportElement
+						x="3"
+						y="100"
+						width="65"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[TIPO DO CT-E]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="76"
+						y="100"
+						width="65"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[TIPO DO SERVIÇO]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="149"
+						y="100"
+						width="65"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[TOMADOR DO SERVIÇO]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="222"
+						y="100"
+						width="65"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[FORMA DE PAGAMENTO]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="3"
+						y="120"
+						width="144"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[CFOP - NATUREZA DA OPERAÇÃO]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="3"
+						y="140"
+						width="144"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[ORIGEM DA PRESTAÇÃO]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="268"
+						y="140"
+						width="144"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[DESTINO DA PRESTAÇÃO]]></text>
+				</staticText>
+				<rectangle radius="3" >
+					<reportElement
+						x="0"
+						y="160"
+						width="265"
+						height="70"
+						key="rectangle-73"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</rectangle>
+				<rectangle radius="3" >
+					<reportElement
+						x="265"
+						y="160"
+						width="266"
+						height="70"
+						key="rectangle-73"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</rectangle>
+				<staticText>
+					<reportElement
+						x="3"
+						y="167"
+						width="39"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[REMETENTE:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="3"
+						y="179"
+						width="39"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[ENDEREÇO:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="3"
+						y="206"
+						width="39"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[MUNICÍPIO:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="3"
+						y="219"
+						width="39"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[CNPJ/CPF:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="193"
+						y="206"
+						width="15"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[CEP:]]></text>
+				</staticText>
+				<rectangle radius="3" >
+					<reportElement
+						x="0"
+						y="230"
+						width="265"
+						height="73"
+						key="rectangle-73"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</rectangle>
+				<rectangle radius="3" >
+					<reportElement
+						x="265"
+						y="230"
+						width="266"
+						height="73"
+						key="rectangle-73"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</rectangle>
+				<staticText>
+					<reportElement
+						x="193"
+						y="276"
+						width="15"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[CEP:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="3"
+						y="236"
+						width="39"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[EXPEDIDOR:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="3"
+						y="249"
+						width="39"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[ENDEREÇO:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="3"
+						y="289"
+						width="39"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[CNPJ/CPF:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="3"
+						y="276"
+						width="39"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[MUNICÍPIO:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="144"
+						y="219"
+						width="47"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[INSC. ESTADUAL:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="146"
+						y="289"
+						width="47"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[INSC. ESTADUAL:]]></text>
+				</staticText>
+				<rectangle radius="3" >
+					<reportElement
+						x="0"
+						y="320"
+						width="531"
+						height="41"
+						key="rectangle-72"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</rectangle>
+				<staticText>
+					<reportElement
+						x="4"
+						y="325"
+						width="39"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[TOMADOR:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="4"
+						y="338"
+						width="39"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[ENDEREÇO:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="151"
+						y="351"
+						width="43"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[INSC. ESTADUAL:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="4"
+						y="351"
+						width="39"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[CNPJ/CPF:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="462"
+						y="325"
+						width="15"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[CEP:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="271"
+						y="325"
+						width="31"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[MUNICÍPIO:]]></text>
+				</staticText>
+				<rectangle radius="3" >
+					<reportElement
+						x="0"
+						y="361"
+						width="531"
+						height="20"
+						key="rectangle-72"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</rectangle>
+				<line direction="TopDown">
+					<reportElement
+						x="187"
+						y="361"
+						width="1"
+						height="20"
+						key="line-3"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="396"
+						y="361"
+						width="1"
+						height="20"
+						key="line-3"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</line>
+				<staticText>
+					<reportElement
+						x="3"
+						y="361"
+						width="144"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[PRODUTO PREDOMINANTE]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="190"
+						y="361"
+						width="144"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[OUTRAS CARACTERÍSTICAS DA CARGA]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="399"
+						y="361"
+						width="129"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[VALOR TOTAL DA MERCADORIA]]></text>
+				</staticText>
+				<rectangle radius="3" >
+					<reportElement
+						x="0"
+						y="381"
+						width="531"
+						height="28"
+						key="rectangle-72"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</rectangle>
+				<line direction="TopDown">
+					<reportElement
+						x="67"
+						y="381"
+						width="1"
+						height="28"
+						key="line-3"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="336"
+						y="381"
+						width="1"
+						height="28"
+						key="line-3"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="336"
+						y="391"
+						width="195"
+						height="1"
+						key="line"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</line>
+				<staticText>
+					<reportElement
+						x="339"
+						y="381"
+						width="177"
+						height="10"
+						key="staticText-148"/>
+					<box></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="8" isBold="true"/>
+					</textElement>
+				<text><![CDATA[SEGURADORA]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="340"
+						y="392"
+						width="51"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[RESPONSÁVEL]]></text>
+				</staticText>
+				<line direction="TopDown">
+					<reportElement
+						x="407"
+						y="391"
+						width="1"
+						height="18"
+						key="line-3"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="461"
+						y="391"
+						width="1"
+						height="18"
+						key="line-3"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</line>
+				<staticText>
+					<reportElement
+						x="410"
+						y="392"
+						width="51"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[NÚMERO APÓLICE]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="464"
+						y="392"
+						width="67"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[NÚMERO DA AVERBAÇÃO]]></text>
+				</staticText>
+				<line direction="TopDown">
+					<reportElement
+						x="134"
+						y="381"
+						width="1"
+						height="28"
+						key="line-3"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="268"
+						y="381"
+						width="1"
+						height="28"
+						key="line-3"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="201"
+						y="381"
+						width="1"
+						height="28"
+						key="line-3"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</line>
+				<rectangle radius="3" >
+					<reportElement
+						mode="Transparent"
+						x="0"
+						y="409"
+						width="531"
+						height="45"
+						key="rectangle-72"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</rectangle>
+				<line direction="TopDown">
+					<reportElement
+						x="439"
+						y="417"
+						width="1"
+						height="37"
+						key="line-3"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</line>
+				<staticText>
+					<reportElement
+						x="0"
+						y="409"
+						width="531"
+						height="8"
+						key="staticText-148"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Bottom">
+						<font fontName="Arial" size="6"/>
+					</textElement>
+				<text><![CDATA[COMPONENTES DO VALOR DA PRESTAÇÃO DE SERVIÇO]]></text>
+				</staticText>
+				<line direction="TopDown">
+					<reportElement
+						x="0"
+						y="417"
+						width="531"
+						height="1"
+						key="line"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="439"
+						y="435"
+						width="92"
+						height="1"
+						key="line"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</line>
+				<staticText>
+					<reportElement
+						x="442"
+						y="418"
+						width="89"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[VALOR TOTAL DO SERVIÇO]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="442"
+						y="436"
+						width="89"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[VALOR A RECEBER]]></text>
+				</staticText>
+				<rectangle radius="3" >
+					<reportElement
+						x="0"
+						y="454"
+						width="531"
+						height="20"
+						key="rectangle-73"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</rectangle>
+				<line direction="TopDown">
+					<reportElement
+						x="464"
+						y="454"
+						width="1"
+						height="20"
+						key="line-3"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</line>
+				<staticText>
+					<reportElement
+						x="467"
+						y="454"
+						width="64"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[ICMS ST]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="400"
+						y="454"
+						width="64"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[% RED. BASE DE CALC.]]></text>
+				</staticText>
+				<line direction="TopDown">
+					<reportElement
+						x="397"
+						y="454"
+						width="1"
+						height="20"
+						key="line-3"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</line>
+				<staticText>
+					<reportElement
+						x="333"
+						y="454"
+						width="64"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[VALOR DO ICMS]]></text>
+				</staticText>
+				<line direction="TopDown">
+					<reportElement
+						x="330"
+						y="454"
+						width="1"
+						height="20"
+						key="line-3"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</line>
+				<staticText>
+					<reportElement
+						x="294"
+						y="454"
+						width="36"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[ALIQ. ICMS]]></text>
+				</staticText>
+				<line direction="TopDown">
+					<reportElement
+						x="291"
+						y="454"
+						width="1"
+						height="20"
+						key="line-3"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</line>
+				<staticText>
+					<reportElement
+						x="227"
+						y="454"
+						width="64"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[BASE DE CÁLCULO]]></text>
+				</staticText>
+				<line direction="TopDown">
+					<reportElement
+						x="224"
+						y="454"
+						width="1"
+						height="20"
+						key="line-3"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</line>
+				<staticText>
+					<reportElement
+						x="3"
+						y="454"
+						width="64"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[SITUAÇÃO TRIBUTÁRIA]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="6"
+						y="106"
+						width="62"
+						height="14"
+						key="textField-1"/>
+					<box></box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Courier New" pdfFontName="Helvetica" size="8" isBold="false"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{tpEmis}.equals("1") ? "Normal" : 
+$F{tpEmis}.equals("4") ? "EPEC pela SVC;":
+$F{tpEmis}.equals("5") ? "Contingência":""]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="3"
+						y="126"
+						width="141"
+						height="14"
+						key="textField-2"/>
+					<box></box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Courier New" pdfFontName="Helvetica" size="8" isBold="false"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{cfop} + "-"+ $F{natOp}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="295"
+						y="35"
+						width="25"
+						height="14"
+						key="textField"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Courier New" size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{mod}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="320"
+						y="35"
+						width="25"
+						height="14"
+						key="textField-3"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Courier New" pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{serie}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="343"
+						y="35"
+						width="55"
+						height="14"
+						key="textField-4"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Courier New" pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{nCT}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="9"
+						width="292"
+						height="27"
+						key="textField-5"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Top">
+						<font fontName="Courier New" pdfFontName="Times-Bold" size="12" isBold="true"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{NomeEmitente}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="9"
+						width="292"
+						height="27"
+						key="textField-5"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Top">
+						<font fontName="Courier New" pdfFontName="Times-Bold" size="12" isBold="true"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{NomeEmitente}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="35"
+						width="292"
+						height="65"
+						key="textField-7"/>
+					<box leftPadding="4"></box>
+					<textElement>
+						<font fontName="Courier New" pdfFontName="Courier-Bold" size="9" isBold="true"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[($F{logradouroEmitente}  != null ? 	 $F{logradouroEmitente} : "" ) + 
+($F{numeroEmitente} 	 != null ? ", " + $F{numeroEmitente} 	: "" ) + 
+($F{complementoEmitente} != null ? " - " + $F{complementoEmitente}: "" ) +
+($F{bairroEmitente} 	 != null ? " - " + $F{bairroEmitente} 	: "" ) +
+"\n"+
+($F{municipioEmitente} 	!= null ? $F{municipioEmitente}	: "") + 
+($F{ufEmitente} 	!= null ? " - " + $F{ufEmitente} 	: "") + 
+($F{cepEmitente} 	!= null ? " - CEP:" + $F{cepEmitente} 	: "") +
+"\n"+
+($F{cnpjEmitente}.substring(0,2) + "." +
+$F{cnpjEmitente}.substring(2,5) + "." + $F{cnpjEmitente}.substring(5,8) + "/" +
+$F{cnpjEmitente}.substring(8,12) + "-" + $F{cnpjEmitente}.substring(12,14) 	       !=null ? "CNPJ: " 		+ $F{cnpjEmitente}.substring(0,2) + "." +
+$F{cnpjEmitente}.substring(2,5) + "." + $F{cnpjEmitente}.substring(5,8) + "/" +
+$F{cnpjEmitente}.substring(8,12) + "-" + $F{cnpjEmitente}.substring(12,14) : "") + 
+"\n"+
+($F{inscricaoEstadualEmitente} !=null ? "INSCRIÇÃO ESTADUAL: " + $F{inscricaoEstadualEmitente} : "") +
+($F{telefoneEmitente} 	!= null ? " TELEFONE:" + $F{telefoneEmitente} 	: "")]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="399"
+						y="35"
+						width="25"
+						height="14"
+						key="textField-8"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Courier New" pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[" " + $V{PAGE_NUMBER} + "/" + "" + $V{PAGE_NUMBER}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="426"
+						y="34"
+						width="104"
+						height="14"
+						key="textField-9"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Courier New" size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{dhEmi}.substring(8,10) + "/"
++ $F{dhEmi}.substring(5,7) + "/"
++ $F{dhEmi}.substring(0,4) +" "
++ $F{dhEmi}.substring(11,19)]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="294"
+						y="85"
+						width="237"
+						height="14"
+						key="textField-10"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Courier New" pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{chCTe}]]></textFieldExpression>
+				</textField>
+				<image  scaleImage="FillFrame" vAlign="Top" hAlign="Left" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="294"
+						y="52"
+						width="236"
+						height="26"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="barcode-1"/>
+					<box></box>
+					<graphicElement stretchType="NoStretch" fill="Solid" />
+					<imageExpression class="java.awt.Image"><![CDATA[it.businesslogic.ireport.barcode.BcImage.getBarcodeImage(8,$F{chCTe},false,false,null,0,0)]]></imageExpression>
+				</image>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="75"
+						y="106"
+						width="73"
+						height="14"
+						key="textField-12"/>
+					<box leftPadding="4"></box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Courier New" pdfFontName="Helvetica" size="8" isBold="false"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{tpCTe}.equals("0") ? "Normal" : 
+$F{tpCTe}.equals("1") ? "Complemento de Valores":
+$F{tpCTe}.equals("2") ? "Anulação":
+$F{tpCTe}.equals("3") ? "Substituto":""]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="145"
+						y="106"
+						width="73"
+						height="14"
+						key="textField-13"/>
+					<box leftPadding="4"></box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Courier New" pdfFontName="Helvetica" size="8" isBold="false"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{toma3}.equals("0") ? "Remetente" : 
+$F{toma3}.equals("1") ? "Expedidor":
+$F{toma3}.equals("2") ? "Recebedor":
+$F{toma3}.equals("3") ? "Destinatário":
+$F{toma4}.equals("4") ? "Outros":""]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="220"
+						y="106"
+						width="70"
+						height="14"
+						key="textField-14"/>
+					<box leftPadding="4"></box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Courier New" pdfFontName="Helvetica" size="8" isBold="false"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{forPag}.equals("0") ? "Pago" : 
+$F{forPag}.equals("1") ? "A pagar":
+$F{forPag}.equals("2") ? "Outros":""]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="294"
+						y="106"
+						width="132"
+						height="14"
+						key="textField-15"/>
+					<box leftPadding="4"></box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Courier New" pdfFontName="Helvetica" size="8" isBold="false"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{nProt} + " " 
++ $F{dhRecbto}.substring(8,10) + "/"
++ $F{dhRecbto}.substring(5,7) + "/"
++ $F{dhRecbto}.substring(0,4) +" "
++ $F{dhRecbto}.substring(11,19)]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="6"
+						y="145"
+						width="257"
+						height="14"
+						key="textField-16"/>
+					<box></box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Courier New" pdfFontName="Helvetica" size="8" isBold="false"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{UFIni} + " - " + $F{xMunIni}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="269"
+						y="145"
+						width="257"
+						height="14"
+						key="textField-17"/>
+					<box></box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Courier New" pdfFontName="Helvetica" size="8" isBold="false"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{UFFim} + " - " + $F{xMunFim}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="45"
+						y="163"
+						width="219"
+						height="13"
+						key="textField-18"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Courier New" size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{RemxNome}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="45"
+						y="176"
+						width="219"
+						height="13"
+						key="textField-19"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Courier New" size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{RemxLgr} + ", " + $F{Remnro}+ " - " + $F{RemxBairro}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="44"
+						y="202"
+						width="148"
+						height="13"
+						key="textField-20"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Courier New" size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{RemxMun} + " - " + $F{RemUF}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="209"
+						y="202"
+						width="56"
+						height="13"
+						key="textField-21"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Courier New" size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{RemCEP}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="44"
+						y="216"
+						width="101"
+						height="13"
+						key="textField-22"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Courier New" size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{RemCNPJ}.substring(0,2) + "." +
+$F{RemCNPJ}.substring(2,5) + "." + $F{RemCNPJ}.substring(5,8) + "/" +
+$F{RemCNPJ}.substring(8,12) + "-" + $F{RemCNPJ}.substring(12,14)]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="193"
+						y="216"
+						width="72"
+						height="13"
+						key="textField-23"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Courier New" size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{RemIE}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="45"
+						y="246"
+						width="219"
+						height="13"
+						key="textField-24"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Courier New" size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{expedxLgr}  != null ? $F{expedxLgr} + ", " + $F{expednro}+ " - " + $F{expedxBairro} : ""]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="45"
+						y="233"
+						width="219"
+						height="13"
+						key="textField-25"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Courier New" size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{expedxNome}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="44"
+						y="272"
+						width="148"
+						height="13"
+						key="textField-26"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Courier New" size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{expedxMun}  != null ? $F{expedxMun} + " - " + $F{expedUF} : ""]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="209"
+						y="272"
+						width="56"
+						height="13"
+						key="textField-27"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Courier New" size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{expedCEP}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="44"
+						y="286"
+						width="101"
+						height="13"
+						key="textField-28"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Courier New" size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{expedCNPJ}.substring(0,2) + "." +
+$F{expedCNPJ}.substring(2,5) + "." + $F{expedCNPJ}.substring(5,8) + "/" +
+$F{expedCNPJ}.substring(8,12) + "-" + $F{expedCNPJ}.substring(12,14)]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="193"
+						y="286"
+						width="72"
+						height="13"
+						key="textField-29"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Courier New" size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{expedIE}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="268"
+						y="236"
+						width="39"
+						height="6"
+						key="staticText-153"/>
+					<box></box>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[RECEBEDOR:]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="310"
+						y="233"
+						width="219"
+						height="13"
+						key="textField-30"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Courier New" size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{recebxNome}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="268"
+						y="249"
+						width="39"
+						height="6"
+						key="staticText-154"/>
+					<box></box>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[ENDEREÇO:]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="310"
+						y="247"
+						width="219"
+						height="13"
+						key="textField-31"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Courier New" size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{recebxLgr}  != null ? $F{recebxLgr} + ", " + $F{recebnro}+ " - " + $F{recebxBairro} : ""]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="268"
+						y="276"
+						width="39"
+						height="6"
+						key="staticText-155"/>
+					<box></box>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[MUNICÍPIO:]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="309"
+						y="272"
+						width="148"
+						height="13"
+						key="textField-32"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Courier New" size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{recebxMun}  != null ? $F{recebxMun} + " - " + $F{recebUF} : ""]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="458"
+						y="276"
+						width="15"
+						height="6"
+						key="staticText-156"/>
+					<box></box>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[CEP:]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="474"
+						y="272"
+						width="56"
+						height="13"
+						key="textField-33"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Courier New" size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{recebCEP}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="458"
+						y="286"
+						width="72"
+						height="13"
+						key="textField-34"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Courier New" size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{recebIE}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="411"
+						y="289"
+						width="47"
+						height="6"
+						key="staticText-157"/>
+					<box></box>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[INSC. ESTADUAL:]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="309"
+						y="286"
+						width="101"
+						height="13"
+						key="textField-35"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Courier New" size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{recebCNPJ}.substring(0,2) + "." +
+$F{recebCNPJ}.substring(2,5) + "." + $F{recebCNPJ}.substring(5,8) + "/" +
+$F{recebCNPJ}.substring(8,12) + "-" + $F{recebCNPJ}.substring(12,14)]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="268"
+						y="289"
+						width="39"
+						height="6"
+						key="staticText-158"/>
+					<box></box>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[CNPJ/CPF:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="268"
+						y="179"
+						width="39"
+						height="6"
+						key="staticText-159"/>
+					<box></box>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[ENDEREÇO:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="268"
+						y="167"
+						width="39"
+						height="6"
+						key="staticText-160"/>
+					<box></box>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[DESTINATÁRIO:]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="310"
+						y="163"
+						width="219"
+						height="13"
+						key="textField-36"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Courier New" size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{destxNome}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="310"
+						y="176"
+						width="219"
+						height="13"
+						key="textField-37"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Courier New" size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{destxLgr} + ", " + $F{destnro}+ " - " + $F{destxBairro}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="268"
+						y="206"
+						width="39"
+						height="6"
+						key="staticText-161"/>
+					<box></box>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[MUNICÍPIO:]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="309"
+						y="202"
+						width="148"
+						height="13"
+						key="textField-38"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Courier New" size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{destxMun} + " - " + $F{destUF}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="458"
+						y="206"
+						width="15"
+						height="6"
+						key="staticText-162"/>
+					<box></box>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[CEP:]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="474"
+						y="202"
+						width="56"
+						height="13"
+						key="textField-39"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Courier New" size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{destCEP}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="268"
+						y="219"
+						width="39"
+						height="6"
+						key="staticText-163"/>
+					<box></box>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[CNPJ/CPF:]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="309"
+						y="216"
+						width="101"
+						height="13"
+						key="textField-40"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Courier New" size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{destCNPJ}.substring(0,2) + "." +
+$F{destCNPJ}.substring(2,5) + "." + $F{destCNPJ}.substring(5,8) + "/" +
+$F{destCNPJ}.substring(8,12) + "-" + $F{destCNPJ}.substring(12,14)]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="409"
+						y="219"
+						width="47"
+						height="6"
+						key="staticText-164"/>
+					<box></box>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[INSC. ESTADUAL:]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="458"
+						y="216"
+						width="72"
+						height="13"
+						key="textField-41"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Courier New" size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{destIE}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="45"
+						y="322"
+						width="219"
+						height="13"
+						key="textField-42"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Courier New" size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{TomadorServico3}.equals("0") ? $F{RemxNome} : 
+$F{TomadorServico3}.equals("1") ? $F{expedxNome}:
+$F{TomadorServico3}.equals("2") ? $F{recebxNome}:
+$F{TomadorServico3}.equals("3") ? $F{destxNome}:""]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="45"
+						y="335"
+						width="219"
+						height="13"
+						key="textField-43"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Courier New" size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{TomadorServico3}.equals("0") ? $F{RemxLgr} + ", " + $F{Remnro}+ " - " + $F{RemxBairro} : 
+$F{TomadorServico3}.equals("1") ? $F{expedxLgr} + ", " + $F{expednro}+ " - " + $F{expedxBairro}:
+$F{TomadorServico3}.equals("2") ? $F{recebxLgr} + ", " + $F{recebnro}+ " - " + $F{recebxBairro}:
+$F{TomadorServico3}.equals("3") ? $F{destxLgr} + ", " + $F{destnro}+ " - " + $F{destxBairro}:""]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="305"
+						y="322"
+						width="153"
+						height="13"
+						key="textField-44"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Courier New" size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{TomadorServico3}.equals("0") ? $F{RemxMun} + " - " + $F{RemUF}: 
+$F{TomadorServico3}.equals("1") ? $F{expedxMun} + " - " + $F{expedUF}:
+$F{TomadorServico3}.equals("2") ? $F{recebxMun} + " - " + $F{recebUF}:
+$F{TomadorServico3}.equals("3") ? $F{destxMun} + " - " + $F{destUF}:""]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="478"
+						y="322"
+						width="51"
+						height="13"
+						key="textField-45"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Courier New" size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{TomadorServico3}.equals("0") ? $F{RemCEP}: 
+$F{TomadorServico3}.equals("1") ? $F{expedCEP}:
+$F{TomadorServico3}.equals("2") ? $F{recebCEP}:
+$F{TomadorServico3}.equals("3") ? $F{destCEP}:""]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="46"
+						y="346"
+						width="91"
+						height="13"
+						key="textField-46"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Courier New" size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{TomadorServico3}.equals("0") ? $F{RemCNPJ}.substring(0,2) + "." +
+$F{RemCNPJ}.substring(2,5) + "." + $F{RemCNPJ}.substring(5,8) + "/" +
+$F{RemCNPJ}.substring(8,12) + "-" + $F{RemCNPJ}.substring(12,14) : 
+$F{TomadorServico3}.equals("1") ? $F{expedCNPJ}.substring(0,2) + "." +
+$F{expedCNPJ}.substring(2,5) + "." + $F{expedCNPJ}.substring(5,8) + "/" +
+$F{expedCNPJ}.substring(8,12) + "-" + $F{expedCNPJ}.substring(12,14):
+$F{TomadorServico3}.equals("2") ? $F{recebCNPJ}.substring(0,2) + "." +
+$F{recebCNPJ}.substring(2,5) + "." + $F{recebCNPJ}.substring(5,8) + "/" +
+$F{recebCNPJ}.substring(8,12) + "-" + $F{recebCNPJ}.substring(12,14):
+$F{TomadorServico3}.equals("3") ? $F{destCNPJ}.substring(0,2) + "." +
+$F{destCNPJ}.substring(2,5) + "." + $F{destCNPJ}.substring(5,8) + "/" +
+$F{destCNPJ}.substring(8,12) + "-" + $F{destCNPJ}.substring(12,14):""]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="195"
+						y="347"
+						width="113"
+						height="13"
+						key="textField-47"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Courier New" size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{TomadorServico3}.equals("0") ? $F{RemIE} : 
+$F{TomadorServico3}.equals("1") ? $F{expedIE}:
+$F{TomadorServico3}.equals("2") ? $F{recebIE}:
+$F{TomadorServico3}.equals("3") ? $F{destIE}:""]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="4"
+						y="460"
+						width="218"
+						height="14"
+						key="textField"/>
+					<box></box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Courier New" size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{CstIcms}.equals("00") ? $F{CstIcms}+ " - tributação normal ICMS": 
+$F{CstIcms}.equals("20") ? $F{CstIcms}+ " - tributação com BC reduzida do ICMS": 
+$F{CstIcms}.equals("40") ? $F{CstIcms}+ " - ICMS isenção": 
+$F{CstIcms}.equals("41") ? $F{CstIcms}+ " - ICMS não tributada": 
+$F{CstIcms}.equals("51") ? $F{CstIcms}+ " - ICMS diferido": 
+$F{CstIcms}.equals("60") ? $F{CstIcms}+ " - ICMS cobrado anteriormente por ST":
+$F{CstIcms}.equals("90") ? $F{CstIcms}+ " - ICMS outros" :""]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="227"
+						y="459"
+						width="59"
+						height="14"
+						key="textField-48"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Courier New" size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{vBC}  != null ? new DecimalFormat(",##0.00").format(Double.valueOf($F{vBC})) : ""]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="294"
+						y="460"
+						width="35"
+						height="14"
+						key="textField-49"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Courier New" size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{pICMS}  != null ? new DecimalFormat(",##0.00").format(Double.valueOf($F{pICMS})) : ""]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="334"
+						y="459"
+						width="62"
+						height="14"
+						key="textField-50"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Courier New" size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{vICMS}  != null ? new DecimalFormat(",##0.00").format(Double.valueOf($F{vICMS})) : ""]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="442"
+						y="424"
+						width="86"
+						height="12"
+						key="textField-51"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Courier New" size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{vTPrest}  != null ? new DecimalFormat(",##0.00").format(Double.valueOf($F{vTPrest})) : ""]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="442"
+						y="442"
+						width="86"
+						height="12"
+						key="textField-52"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Courier New" size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{vRec}  != null ? new DecimalFormat(",##0.00").format(Double.valueOf($F{vRec})) : ""]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="464"
+						y="459"
+						width="62"
+						height="14"
+						key="textField-53"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Courier New" size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{vICMSSTRet}  != null ? new DecimalFormat(",##0.00").format(Double.valueOf($F{vICMSSTRet})) : ""]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="398"
+						y="367"
+						width="129"
+						height="12"
+						key="textField-54"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Courier New" size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{vCarga}  != null ? new DecimalFormat(",##0.00").format(Double.valueOf($F{vCarga})) : ""]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="6"
+						y="367"
+						width="180"
+						height="12"
+						key="textField-55"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Courier New" size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{proPred}]]></textFieldExpression>
+				</textField>
+				<subreport  isUsingCache="true">
+					<reportElement
+						x="3"
+						y="383"
+						width="209"
+						height="25"
+						key="subreport-1"/>
+					<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).dataSource("/cteProc/CTe/infCte/infCTeNorm/infCarga/infQ")]]></dataSourceExpression>
+					<subreportExpression  class="java.lang.String"><![CDATA[$P{SUBREPORT_DIR} + "dacteSubTpMed.jasper"]]></subreportExpression>
+				</subreport>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="337"
+						y="398"
+						width="68"
+						height="10"
+						key="textField-56"/>
+					<box leftPadding="4"></box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Courier New" pdfFontName="Helvetica" size="8" isBold="false"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{respSeg}.equals("0") ? "Remetente" : 
+$F{respSeg}.equals("1") ? "Expedidor":
+$F{respSeg}.equals("2") ? "Recebedor":
+$F{respSeg}.equals("3") ? "Destinatário":
+$F{respSeg}.equals("4") ? "Emit. do CT-e":
+$F{respSeg}.equals("5") ? "Tomador Serviço":""]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="407"
+						y="398"
+						width="53"
+						height="10"
+						key="textField-57"/>
+					<box leftPadding="4"></box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Courier New" pdfFontName="Helvetica" size="8" isBold="false"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{nApol}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="397"
+						y="381"
+						width="119"
+						height="10"
+						key="textField-58"/>
+					<box leftPadding="4"></box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Courier New" pdfFontName="Helvetica" size="8" isBold="false"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{xSeg}]]></textFieldExpression>
+				</textField>
+				<subreport  isUsingCache="true">
+					<reportElement
+						x="3"
+						y="417"
+						width="426"
+						height="14"
+						key="subreport-2"/>
+					<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).dataSource("/cteProc/CTe/infCte/vPrest/Comp")]]></dataSourceExpression>
+					<subreportExpression  class="java.lang.String"><![CDATA[$P{SUBREPORT_DIR} + "dacteSubComp.jasper"]]></subreportExpression>
+				</subreport>
+				<rectangle radius="3" >
+					<reportElement
+						x="0"
+						y="474"
+						width="275"
+						height="12"
+						key="rectangle-120"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</rectangle>
+				<staticText>
+					<reportElement
+						x="6"
+						y="477"
+						width="262"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[CHAVE DE ACESSO:]]></text>
+				</staticText>
+				<rectangle radius="3" >
+					<reportElement
+						x="275"
+						y="474"
+						width="256"
+						height="12"
+						key="rectangle-120"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</rectangle>
+				<staticText>
+					<reportElement
+						x="292"
+						y="477"
+						width="34"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[NÚMERO]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="378"
+						y="477"
+						width="39"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[DT.EMISSÃO.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="346"
+						y="477"
+						width="17"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[SÉRIE]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="436"
+						y="477"
+						width="19"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[CFOP]]></text>
+				</staticText>
+				<subreport  isUsingCache="true">
+					<reportElement
+						x="50"
+						y="488"
+						width="209"
+						height="18"
+						key="subreport-3"/>
+					<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).dataSource("/cteProc/CTe/infCte/rem/infNFe")]]></dataSourceExpression>
+					<subreportExpression  class="java.lang.String"><![CDATA[$P{SUBREPORT_DIR} + "dacteChave.jasper"]]></subreportExpression>
+				</subreport>
+				<subreport  isUsingCache="true">
+					<reportElement
+						x="288"
+						y="488"
+						width="209"
+						height="18"
+						key="subreport-4"/>
+					<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).dataSource("/cteProc/CTe/infCte/infCTeNorm/infDoc/infNF")]]></dataSourceExpression>
+					<subreportExpression  class="java.lang.String"><![CDATA[$P{SUBREPORT_DIR} + "dacteChaveNF.jasper"]]></subreportExpression>
+				</subreport>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="191"
+						y="367"
+						width="180"
+						height="12"
+						key="textField-66"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Courier New" size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{xOutCat}]]></textFieldExpression>
+				</textField>
+			</band>
+		</title>
+		<pageHeader>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</pageHeader>
+		<columnHeader>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnHeader>
+		<detail>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</detail>
+		<columnFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnFooter>
+		<pageFooter>
+			<band height="167"  isSplitAllowed="true" >
+				<printWhenExpression><![CDATA[new Boolean($V{PAGE_NUMBER}.compareTo( new Integer(1) ) != 1)]]></printWhenExpression>
+				<rectangle radius="3" >
+					<reportElement
+						x="0"
+						y="1"
+						width="531"
+						height="36"
+						key="rectangle-47"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</rectangle>
+				<line direction="TopDown">
+					<reportElement
+						x="0"
+						y="9"
+						width="531"
+						height="1"
+						key="line"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</line>
+				<staticText>
+					<reportElement
+						x="0"
+						y="1"
+						width="531"
+						height="8"
+						key="staticText-148"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Bottom">
+						<font fontName="Arial" size="6"/>
+					</textElement>
+				<text><![CDATA[OBSERVAÇÕES]]></text>
+				</staticText>
+				<rectangle radius="3" >
+					<reportElement
+						x="0"
+						y="37"
+						width="531"
+						height="28"
+						key="rectangle-47"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</rectangle>
+				<line direction="TopDown">
+					<reportElement
+						x="0"
+						y="45"
+						width="531"
+						height="1"
+						key="line"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</line>
+				<staticText>
+					<reportElement
+						x="0"
+						y="37"
+						width="531"
+						height="8"
+						key="staticText-148"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Bottom">
+						<font fontName="Arial" size="6"/>
+					</textElement>
+				<text><![CDATA[INFORMAÇÕES ESPECÍFICAS DP MODAL RODOVIÁRIO - CARGAS FRACIONADAS]]></text>
+				</staticText>
+				<line direction="TopDown">
+					<reportElement
+						x="140"
+						y="45"
+						width="1"
+						height="20"
+						key="line-3"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</line>
+				<staticText>
+					<reportElement
+						x="143"
+						y="46"
+						width="28"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[LOTAÇÃO]]></text>
+				</staticText>
+				<line direction="TopDown">
+					<reportElement
+						x="171"
+						y="45"
+						width="1"
+						height="20"
+						key="line-3"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</line>
+				<staticText>
+					<reportElement
+						x="174"
+						y="46"
+						width="81"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[DATA PREVISÃO DE ENTREGA]]></text>
+				</staticText>
+				<line direction="TopDown">
+					<reportElement
+						x="255"
+						y="45"
+						width="1"
+						height="20"
+						key="line-3"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</line>
+				<staticText>
+					<reportElement
+						x="259"
+						y="50"
+						width="269"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[ESTE CONHECIMENTO DE TRANSPORTE ATENDE A LEGISLAÇÃO]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="259"
+						y="56"
+						width="269"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[DE TRANSPORTE RODOVIÁRIO EM VIGOR]]></text>
+				</staticText>
+				<line direction="TopDown">
+					<reportElement
+						x="1"
+						y="76"
+						width="531"
+						height="1"
+						key="line"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5" lineStyle="Dashed"/>
+</graphicElement>
+				</line>
+				<staticText>
+					<reportElement
+						x="0"
+						y="78"
+						width="531"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[DECLARO QUE RECEBI OS VALORES DESTE CONHECIMENTO DE TRANSPORTE EM PERFEITO ESTADO PELO QUE DOU POR CUMPRIDO O PRESENTE CONTRATO DE TRANSPORTE]]></text>
+				</staticText>
+				<rectangle radius="3" >
+					<reportElement
+						x="0"
+						y="85"
+						width="531"
+						height="82"
+						key="rectangle-47"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</rectangle>
+				<line direction="TopDown">
+					<reportElement
+						x="0"
+						y="93"
+						width="531"
+						height="1"
+						key="line"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</line>
+				<staticText>
+					<reportElement
+						x="10"
+						y="85"
+						width="513"
+						height="8"
+						key="staticText-148"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Bottom">
+						<font fontName="Arial" size="6"/>
+					</textElement>
+				<text><![CDATA[TRANSPORTADOR]]></text>
+				</staticText>
+				<line direction="TopDown">
+					<reportElement
+						x="0"
+						y="113"
+						width="531"
+						height="1"
+						key="line"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="147"
+						y="113"
+						width="1"
+						height="54"
+						key="line-3"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="0"
+						y="131"
+						width="147"
+						height="1"
+						key="line"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</line>
+				<staticText>
+					<reportElement
+						x="3"
+						y="114"
+						width="28"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[NOME]]></text>
+				</staticText>
+				<line direction="TopDown">
+					<reportElement
+						x="0"
+						y="149"
+						width="147"
+						height="1"
+						key="line"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</line>
+				<staticText>
+					<reportElement
+						x="3"
+						y="132"
+						width="28"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[RG]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="3"
+						y="150"
+						width="28"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[DATA]]></text>
+				</staticText>
+				<line direction="TopDown">
+					<reportElement
+						x="417"
+						y="113"
+						width="1"
+						height="54"
+						key="line-3"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="417"
+						y="131"
+						width="114"
+						height="1"
+						key="line"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="417"
+						y="149"
+						width="114"
+						height="1"
+						key="line"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="459"
+						y="113"
+						width="1"
+						height="18"
+						key="line-3"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.5"/>
+</graphicElement>
+				</line>
+				<staticText>
+					<reportElement
+						x="148"
+						y="150"
+						width="269"
+						height="8"
+						key="staticText-148"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Bottom">
+						<font fontName="Arial" size="6"/>
+					</textElement>
+				<text><![CDATA[ASSINATURA / CARIMBO]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="420"
+						y="114"
+						width="28"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[SÉRIE]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="462"
+						y="114"
+						width="66"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[NÚMERO CT-E]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="420"
+						y="132"
+						width="66"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[PREVISÃO DE ENTREGA]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="420"
+						y="150"
+						width="66"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[QTDE. VOLUMES (UND)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="3"
+						y="94"
+						width="51"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[PLACA]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="54"
+						y="94"
+						width="140"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[DESCRIÇÃO DO VEÍCULO]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="195"
+						y="94"
+						width="170"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[MOTORISTA]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="365"
+						y="94"
+						width="165"
+						height="6"
+						key="staticText-148"/>
+					<box></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[PROPRIETÁRIO]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="302"
+						y="67"
+						width="31"
+						height="11"
+						key="staticText-150"/>
+					<box></box>
+					<textElement textAlignment="Right" markup="styled">
+						<font fontName="Courier New" pdfFontName="Courier-Bold" size="5" isBold="true"/>
+					</textElement>
+				<text><![CDATA[Emitido em]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="399"
+						y="67"
+						width="130"
+						height="11"
+						key="staticText-151"/>
+					<box></box>
+					<textElement textAlignment="Left" markup="styled">
+						<font fontName="Courier New" pdfFontName="Courier-Bold" size="5" isBold="true"/>
+					</textElement>
+				<text><![CDATA[pelo Inovador Distac | www.distac.cnt.br]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" pattern="dd/MM/yyyy 'as' HH:mm" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="338"
+						y="67"
+						width="61"
+						height="11"
+						key="textField-11"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Top">
+						<font fontName="Courier New" pdfFontName="Helvetica-Bold" size="5" isBold="true"/>
+					</textElement>
+				<textFieldExpression   class="java.util.Date"><![CDATA[new Date()]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="2"
+						y="67"
+						width="208"
+						height="11"
+						key="staticText-152"/>
+					<box></box>
+					<textElement markup="styled">
+						<font fontName="Courier New" pdfFontName="Courier-Bold" size="5" isBold="true"/>
+					</textElement>
+				<text><![CDATA[Deselvolvido por Distac Contabilidade Ltda | www.distac.cnt.br]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="9"
+						width="528"
+						height="26"
+						key="textField-59"/>
+					<box leftPadding="4"></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Courier New" size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{xObs}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="3"
+						y="53"
+						width="138"
+						height="11"
+						key="textField-60"/>
+					<box leftPadding="4"></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Courier New" size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{RNTRC}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="141"
+						y="54"
+						width="30"
+						height="11"
+						key="textField-61"/>
+					<box leftPadding="4"></box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Courier New" pdfFontName="Helvetica" size="8" isBold="false"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{lota}.equals("0") ? "NÃO" : 
+$F{lota}.equals("1") ? "SIM":""]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="dd/MM/yyyy" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="171"
+						y="54"
+						width="84"
+						height="11"
+						key="textField-62"/>
+					<box leftPadding="4"></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Courier New" size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.util.Date"><![CDATA[$F{dPrev} != null ? new SimpleDateFormat("yyyy-MM-dd").parse($F{dPrev}) : null]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="420"
+						y="119"
+						width="25"
+						height="14"
+						key="textField-63"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Courier New" pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{serie}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="463"
+						y="118"
+						width="55"
+						height="14"
+						key="textField-64"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Courier New" pdfFontName="Helvetica-Bold" size="8" isBold="true"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{nCT}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="dd/MM/yyyy" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="420"
+						y="137"
+						width="84"
+						height="11"
+						key="textField-65"/>
+					<box leftPadding="4"></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Courier New" size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.util.Date"><![CDATA[$F{dPrev} != null ? new SimpleDateFormat("yyyy-MM-dd").parse($F{dPrev}) : null]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="4"
+						y="47"
+						width="50"
+						height="6"
+						key="staticText-165"/>
+					<box></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+				<text><![CDATA[RNTC DA EMPRESA:]]></text>
+				</staticText>
+			</band>
+		</pageFooter>
+		<summary>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</summary>
+</jasperReport>
